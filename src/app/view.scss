@@ -1,0 +1,56 @@
+@import '../assets/css/variables';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  transition: transform 0.1s, color 0.5s, background-color 0.5s, background-image 0.5s,
+    border 0.5s, text-shadow 0.3s, box-shadow 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+
+  @media (max-width: 800px) {
+    font-size: 9px;
+  }
+}
+
+body {
+  font: 1.6rem 'Roboto', sans-serif;
+
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+
+  height: 100vh;
+
+  color: $color-primary;
+  background-color: $color-background;
+  background-image: url('../assets/images/julian-hochgesang-3-y9vq8uoxk-unsplash.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hidden {
+  display: none;
+}
+
+.lock {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.main__title {
+  padding: 1rem;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+
+  font-size: 2.5rem;
+  @media (max-width: 800px) {
+    font-size: 2rem;
+  }
+}

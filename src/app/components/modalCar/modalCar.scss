@@ -1,0 +1,67 @@
+@import '../../../assets/css/variables';
+
+.modal__label {
+  display: block;
+  padding: 1.5rem 0 0.5rem 0;
+
+  cursor: pointer;
+}
+
+.modal__input_name {
+  padding: 0.7rem 0;
+
+  min-width: 200px;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 0;
+  background-color: $color-background;
+  border: 1px solid $color-line-half;
+
+  color: $color-primary;
+  &::placeholder {
+    color: $color-primary;
+  }
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  &:hover,
+  &:focus {
+    color: $color-background;
+    background-color: $color-primary;
+    &::placeholder {
+      color: $color-background;
+    }
+  }
+}
+
+.modal__input_color {
+  display: block;
+
+  width: 100%;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 0;
+  background-color: $color-background;
+  border: 1px solid $color-line-half;
+
+  color: $color-primary;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.modal__buttons {
+  padding: 2rem 0 0 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
